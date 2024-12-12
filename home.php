@@ -1,6 +1,7 @@
 <?php
 require 'db.php';
 require 'index.php';
+require 'search.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,6 +10,23 @@ require 'index.php';
 </head>
 
 <body>
+    <h1>User Search</h1>
+    <div class="search-container">
+        <form method="POST" action="">
+            <label for="query">Enter a username:</label>
+            <input type="text" id="query" name="query" placeholder="Search username" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <?php if (!empty($error)): ?>
+        <p class="error"><?= htmlspecialchars($error); ?></p>
+    <?php endif; ?>
+
+    <div class="results">
+        <?= $searchResults; ?>
+    </div>
+
     <div class="home_container">
         <h1>Craft Unique Magazines & Blogs with Revision</h1>
         <p>Transform your magazine or blog with standout layouts and user-friendly navigation that draw in readers and keep them engaged.</p>
