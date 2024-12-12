@@ -7,13 +7,14 @@ require 'search.php';
 <html>
 
 <head>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>User Search</h1>
-    <div class="search-container">
+    <div class="search_container">
+        <h1>User Search</h1>
         <form method="POST" action="">
-            <label for="query">Enter a username:</label>
+            <label for="query">Enter a username:</label><br>
             <input type="text" id="query" name="query" placeholder="Search username" required>
             <button type="submit">Search</button>
         </form>

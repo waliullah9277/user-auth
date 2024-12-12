@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['query'])) {
         if ($result->num_rows > 0) {
             $searchResults .= "<h2>Search Results:</h2>";
             while ($row = $result->fetch_assoc()) {
-                $searchResults .= "<div style='border: 1px solid #ccc; padding: 10px; margin: 5px;'>";
+                // $searchResults .= "<div style='border: 1px solid #ccc; padding: 10px; margin: 5px;'>";
                 $searchResults .= "<p><strong>Username:</strong> " . htmlspecialchars($row['username']) . "</p>";
                 $searchResults .= "<p><strong>Name:</strong> " . htmlspecialchars($row['name']) . "</p>";
                 $searchResults .= "<p><strong>Email:</strong> " . htmlspecialchars($row['email']) . "</p>";

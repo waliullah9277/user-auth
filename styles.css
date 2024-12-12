@@ -97,6 +97,18 @@ header {
     padding: 30px;
 }
 
+.search_container {
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.results{
+    width: 380px;
+    margin: auto;
+}
+
 .home_container{
     width: 80%;
     margin: auto;
@@ -151,10 +163,6 @@ header {
     background-color: #0056b3;
 }
 
-
-.search-container {
-    margin-bottom: 20px;
-}
 
 .error {
     color: red;
